@@ -20,16 +20,16 @@ Aplikacja sterująca robotem `Ferdynand`, opracowana we Flutterze, pozwala na be
    Aplikacja rozpoznaje komendy takie jak "do przodu", "do tyłu", "w lewo" i "w prawo". Na ich podstawie aktualizowany jest kierunek ruchu robota. Po podaniu komendy aplikacja automatycznie przełącza się na nasłuch kolejnych instrukcji, umożliwiając płynne sterowanie bez dotykania ekranu.
 
 ### Wizualizacja i Wzorce Ruchu
-- **Do Przodu**: Wyświetlany wzór
-
+- **Do Przodu**:
+- 
   <br> <img src="https://github.com/user-attachments/assets/09f0421f-5194-432a-9e65-37628017c916" width="400"/>
-- **Do Tyłu**: Wyświetlany wzór
+- **Do Tyłu**: 
 
   <br> <img src="https://github.com/user-attachments/assets/5932b3b6-2a50-47c0-8b1d-68d2e6d543d0" width="400"/>
-- **W Lewo**: Wyświetlany wzór
+- **W Lewo**: 
 
   <br> <img src="https://github.com/user-attachments/assets/bdf32996-5269-4022-b7b0-308f39893857" width="400"/>
-- **W Prawo**: Wyświetlany wzór
+- **W Prawo**:
 
   <br> <img src="https://github.com/user-attachments/assets/a74e4888-6d61-49ce-9e06-8ba1dd91738e" width="400"/>
 
