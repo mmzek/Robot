@@ -5,6 +5,7 @@ class Pattern {
   bool nearby = false;
   int sequence = 0;
 
+  
   void controlSequence() {
     Timer.periodic(const Duration(seconds: 3), (timer) {
       if (nearby) {
