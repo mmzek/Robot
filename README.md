@@ -1,53 +1,42 @@
 # 🤖 Ferdynand
 
-### Opis Projektu
-Aplikacja sterująca robotem `Ferdynand`, opracowana we Flutterze, pozwala na bezdotykowe sterowanie ruchem robota. Aplikacja korzysta z rozpoznawania mowy i sensora zbliżeniowego, aby zarządzać trybem ruchu robota w czasie rzeczywistym. W zależności od komend głosowych lub zbliżenia się do przeszkody, robot zmienia kierunek.
+### Project Description
+The **Ferdynand** app, developed using Flutter, allows for contactless control of a robot’s movement. The application utilizes speech recognition and a proximity sensor to manage the robot's motion mode in real-time. Based on voice commands or proximity to an obstacle, the robot changes its direction.
 
-### Funkcjonalność
-- **Rozpoznawanie Mowy**: `Ferdynand` rozpoznaje komendy głosowe takie jak "do przodu", "do tyłu", "w lewo", "w prawo" i dostosowuje kierunek ruchu robota.
-- **Wykrywanie Przeszkód**: Sensor zbliżeniowy wykrywa przeszkody na drodze robota. 
-- **Wizualizacja Ruchu**: Każdy tryb ruchu robota jest reprezentowany przez sekwencję kwadratów, która odbierana jest przez fotodiody.
-- **Bezdotykowa Obsługa**: Po uruchomieniu aplikacja nie wymaga dodatkowej interakcji – ciągle nasłuchuje komend głosowych i danych z sensora.
+### Features
+- **Speech Recognition**: *Ferdynand* understands voice commands such as `"forward"`, `"backward"`, `"left"`, and `"right"`, and adjusts its movement direction accordingly.
+- **Obstacle Detection**: A proximity sensor detects obstacles in the robot’s path.
+- **Movement Visualization**: Each movement mode is represented by a sequence of squares, which are read by photodiodes.
+- **Touchless Operation**: Once started, the app requires no further interaction – it continuously listens for voice commands and sensor data.
 
-### Jak to Działa?
-1. **Uruchomienie Aplikacji**  
-   Po uruchomieniu aplikacji na urządzeniu, następuje automatyczne przyznanie wymaganych uprawnień do mikrofonu i robot zaczyna ruch "do przodu". Aplikacja nasłuchuje komend głosowych i monitoruje otoczenie robota.
+### How It Works
+1. **App Launch**  
+   When the app is launched on a device, microphone permissions are automatically granted, and the robot starts moving *forward*. The app continuously listens for voice commands and monitors the robot's environment.
 
-2. **Reakcja na Przeszkody**  
-   Gdy sensor wykryje przeszkodę, robot automatycznie przechodzi w tryb "do tyłu" na 3 sekundy, po czym wraca do trybu "do przodu", kontynuując ruch. Pozwala to na unikanie przeszkód bez potrzeby interwencji użytkownika.
+2. **Obstacle Response**  
+   When the sensor detects an obstacle, the robot automatically switches to *backward* mode for 3 seconds, then returns to *forward* mode, continuing movement. This allows for obstacle avoidance without user intervention.
 
-3. **Komendy Głosowe**  
-   Aplikacja rozpoznaje komendy takie jak "do przodu", "do tyłu", "w lewo" i "w prawo". Na ich podstawie aktualizowany jest kierunek ruchu robota. Po podaniu komendy aplikacja automatycznie przełącza się na nasłuch kolejnych instrukcji, umożliwiając płynne sterowanie bez dotykania ekranu.
+3. **Voice Commands**  
+   The app recognizes commands like `"forward"`, `"backward"`, `"left"`, and `"right"`. Based on these, the robot's direction is updated. After each command, the app resumes listening for the next one, allowing seamless hands-free control.
 
-### Wizualizacja i Wzorce Ruchu
-- **Do Przodu**:
-- 
+### Movement Visualization
+- **Forward**:  
   <br> <img src="https://github.com/user-attachments/assets/09f0421f-5194-432a-9e65-37628017c916" width="400"/>
-- **Do Tyłu**: 
-
+- **Backward**:  
   <br> <img src="https://github.com/user-attachments/assets/5932b3b6-2a50-47c0-8b1d-68d2e6d543d0" width="400"/>
-- **W Lewo**: 
-
+- **Left**:  
   <br> <img src="https://github.com/user-attachments/assets/bdf32996-5269-4022-b7b0-308f39893857" width="400"/>
-- **W Prawo**:
-
+- **Right**:  
   <br> <img src="https://github.com/user-attachments/assets/a74e4888-6d61-49ce-9e06-8ba1dd91738e" width="400"/>
 
-### Technologie i Biblioteki
-- **Flutter**: Główna technologia użyta do budowy aplikacji.
-- **Permission Handler**: Zarządzanie uprawnieniami dostępu do mikrofonu, co jest niezbędne dla rozpoznawania mowy.
-- **Proximity Sensor**: Wykrywanie przeszkód na drodze robota.
-- **Speech-to-Text**: Tłumaczenie komend głosowych na tekst, który steruje ruchami robota.
+### Technologies and Libraries
+- **Flutter**: The main technology used to build the app.
+- **Permission Handler**: Manages access permissions for the microphone, required for speech recognition.
+- **Proximity Sensor**: Detects obstacles in the robot’s path.
+- **Speech-to-Text**: Translates spoken commands into text that controls the robot’s movements.
 
-### Struktura Projektu
-Kod podzielony jest na moduły dla łatwiejszej dostępności:
-1. **Widget HomePage**: Główna strona aplikacji, wyświetlająca status robota oraz bieżący tryb ruchu.
-2. **Klasa Pattern**: Logika obsługująca wzorce ruchu robota, w zależności od komend głosowych i danych z sensora.
-3. **Klasa VoiceControl**: Moduł zarządzający rozpoznawaniem mowy.
-4. **Klasa Sensor**: Moduł do obsługi sensora zbliżeniowego.
-
-### Rozwój
-W przyszłości projekt można rozszerzyć o:
-- **Dodatkowe Komendy Głosowe**: Rozpoznawanie bardziej złożonych instrukcji, takich jak "obrót" czy "stop".
-- **Zaawansowane Omijanie Przeszkód**: Wprowadzenie algorytmu, który pozwala na bardziej zaawansowane omijanie przeszkód.
-- **Reakcje robota**: Wykorzystanie biblioteki Text-to-Speech, w celu reakcji np. po natrafieniu na przeszkodę.
+### Future Development
+Potential future improvements include:
+- **Additional Voice Commands**: Support for more complex instructions like `"rotate"` or `"stop"`.
+- **Advanced Obstacle Avoidance**: Implementing algorithms for smarter obstacle navigation.
+- **Robot Reactions**: Using a Text-to-Speech library to provide feedback, e.g., when encountering an obstacle.
