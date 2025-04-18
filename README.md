@@ -35,6 +35,11 @@ The **Ferdynand** app, developed using Flutter, allows for contactless control o
 - **Proximity Sensor**: Detects obstacles in the robot’s path.
 - **Speech-to-Text**: Translates spoken commands into text that controls the robot’s movements.
 
+### Project Report and Demo
+[Ferdynand.pdf](https://github.com/user-attachments/files/19815443/Ferdynand.pdf)
+
+https://github.com/user-attachments/assets/6dc2499b-731b-44ce-8bcf-19e1aee53c07
+
 ### Future Development
 Potential future improvements include:
 - **Additional Voice Commands**: Support for more complex instructions like `"rotate"` or `"stop"`.
