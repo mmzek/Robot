@@ -38,7 +38,7 @@ The **Ferdynand** app, developed using Flutter, allows for contactless control o
 ### Project Report and Demo
 [Ferdynand.pdf](https://github.com/user-attachments/files/19815443/Ferdynand.pdf)
 
-https://github.com/user-attachments/assets/6dc2499b-731b-44ce-8bcf-19e1aee53c07
+https://github.com/user-attachments/assets/83a9ddbe-10cc-4620-93e9-79933769b55a
 
 ### Future Development
 Potential future improvements include:
